@@ -1,8 +1,8 @@
 #!/bin/bash
 echo -e "\e[92m[+]\e[96m Installing XFCE4, this will take a while\e[0m"
-sudo apt update
-sudo apt full-upgrade -y
-sudo apt install -y kali-desktop-xfce xorg xrdp compton
+sudo apt-get update
+sudo apt-get dist-upgrade -y --force-yes
+sudo apt-get --yes  --force-yes install kali-desktop-xfce xorg xrdp compton
 echo -e "\e[92m[+]\e[96m Configuring XRDP to listen on port 3390 (but not starting the service)...\e[0m"
 sudo sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini
 echo -e "\e[92m[+]\e[96m Adding some settings to ~./bashrc\e[0m"
