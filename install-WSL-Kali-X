@@ -10,13 +10,13 @@ echo '## enable xcfe launch in WSL
 export DISPLAY=:0
 export XDG_RUNTIME_DIR=~/runtime
 export RUNLEVEL=3
-LANG="es_ES.utf8"' >> ~/.bashrc
+LANG="es_ES.utf8' >> ~/.bashrc
 export DISPLAY=:0
 sudo echo '## enable xcfe launch in WSL
 export DISPLAY=:0
 export XDG_RUNTIME_DIR=~/runtime
 export RUNLEVEL=3
-LANG="es_ES.utf8"' >> /root/.bashrc
+LANG="es_ES.utf8' >> /root/.bashrc
 echo -e "\e[92m[+]\e[96m Getting some more scripts\e[0m"
 wget --no-hsts -O ~/start-xfce https://raw.githubusercontent.com/islataz/WSL-Kali-X/master/start-xfce
 wget --no-hsts -O ~/.xinitrc https://raw.githubusercontent.com/islataz/WSL-Kali-X/master/.xinitrc
